@@ -19,9 +19,9 @@ This section contains solutions to the **Top 100 Foundational Problems**. The fo
 * **Environment:** Pycharm
 
 ## 📈 Roadmap
-- [ ] Complete Top 100 Basic Problems
+- [ ] Complete Understanding of logics of Basic Problems
 - [ ] Maintain a daily commit streak
-- [ ] Ensure all solutions are optimized
+- [ ] Ensure Consistency
 
 ---
 
