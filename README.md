@@ -25,4 +25,4 @@ This section contains solutions to the **Top 100 Foundational Problems**. The fo
 
 ---
 
-**"Success is the sum of small efforts, repeated day-in and day-out."**
+**"Learning happens when you struggle, not when you see."**
