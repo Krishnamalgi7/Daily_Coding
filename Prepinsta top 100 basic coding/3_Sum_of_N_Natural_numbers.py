@@ -7,10 +7,9 @@ Complexity:
     Method 1 (Loop): Time O(n) | Space O(1)
     Method 2 (Formula): Time O(1) | Space O(1)
 """
-
+# Method 1: Iterative Approach
 N = int(input("Enter a number : "))
 
-# Method 1: Iterative Approach
 sum = 0
 for num in range(1, N + 1):
     sum = sum + num
