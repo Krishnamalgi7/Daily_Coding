@@ -12,8 +12,8 @@ N = int(input("Enter a number : "))
 
 # Method 1: Iterative Approach
 sum = 0
-for i in range(1, N + 1):
-    sum += i
+for num in range(1, N + 1):
+    sum = sum + num
 
 print(f"The sum (Iterative) of {N} is {sum}")
 
