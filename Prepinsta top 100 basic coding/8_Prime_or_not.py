@@ -27,9 +27,9 @@ for i in range(2,num):
         break
 
 if flag == 1:
-    print(f"The number {num} is a prime number.")
-else:
     print(f"The number {num} is not a prime number.")
+else:
+    print(f"The number {num} is a prime number.")
 
 
 # Method 2: Optimized approach using math.sqrt library
