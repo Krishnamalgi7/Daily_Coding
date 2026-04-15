@@ -14,7 +14,7 @@ Complexity:
     Method 2: Time O(d) | Space O(d)
 """
 
-# Method 1: Iterative Approach
+# Method 1: Iterative Approach logic based
 number = 1246246
 n = number
 
