@@ -20,12 +20,12 @@ n = number
 
 sum = 0
 
-while number > 0:
-    last_digit = number % 10
+while n > 0:
+    last_digit = n % 10
     sum += last_digit
-    number = number // 10
+    n = n // 10
 
-print(f"The sum of {n} is {sum}")
+print(f"The sum of {number} is {sum}")
 
 
 # Method 2: Using built-in functions
