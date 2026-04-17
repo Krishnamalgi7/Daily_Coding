@@ -21,7 +21,7 @@ for i in range(1, num + 1):
     if num % i == 0:
         factors.append(i)
 
-print("Factors of", num, "are", *factors)
+print("Factors of", num, "are: ", *factors)
 
 
 # Method 2: Optimized using sqrt (intentional different input)
