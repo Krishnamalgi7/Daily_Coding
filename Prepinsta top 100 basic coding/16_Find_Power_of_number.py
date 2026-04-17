@@ -22,7 +22,7 @@ result = 1
 abs_power = abs(power)
 
 if num == 0:
-    print("Cannot find a power of 0")
+    print("Cannot find power of 0")
 elif num == 1:
     print(f"1 to the Power is {result}")
 else:
