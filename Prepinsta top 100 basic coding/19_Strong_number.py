@@ -8,10 +8,14 @@ Finally, compare the sum with the original number.
 Program: Check if a Number is Strong Number
 Description:
     Method 1: Using recursion to calculate factorial of each digit.
-    Method 2: Using Python built-in math.factorial().
+    Method 2: Using string conversion to iterate digits with recursion.
+    Method 3: Using Python built-in math.factorial().
+
 Complexity:
-    Method 1: Time O(d * n) | Space O(n) (recursion stack)
-    Method 2: Time O(d) | Space O(1)
+    Method 1: Time O(d * n) | Space O(n)
+    Method 2: Time O(d * n) | Space O(n)
+    Method 3: Time O(d) | Space O(1)
+
 """
 
 # Method 1: Iterative + Recursion
@@ -32,12 +36,35 @@ def strong_number(n):
 num = 145
 
 if strong_number(num):
-    print(f"{num} is a strong number")
+    print(f"{num} it's a strong number")
 else:
-    print(f"{num} is not a strong number")
+    print(f"{num} it's not a strong number")
 
 
-# Method 2: Using built-in factorial (intentional different input)
+# Method 2: Using string iteration + recursion
+def factorial_num(n):
+    if n == 0:
+        return 1
+    return n * factorial_num(n-1)
+
+
+def is_strong_number(n):
+    result = 0
+
+    for digit in str(n):
+        result += factorial_num(int(digit))
+
+    return result == n
+
+num = 145
+
+if is_strong_number(num):
+    print(f"{num} is a Strong Number.")
+else:
+    print(f"{num} is not a Strong Number.")
+
+
+# Method 3: Using built-in factorial (intentional different input)
 import math
 
 number = 123
@@ -51,10 +78,14 @@ while temp > 0:
     temp //= 10
 
 if number == result:
-    print(f"{number} is a strong number")
+    print(f"{number} it's a strong number")
 else:
-    print(f"{number} is not a strong number")
+    print(f"{number} it's not a strong number")
 
 
-# Method 1 output : 145 is a strong number
-# Method 2 output : 123 is not a strong number
+
+
+# Method 1 output : 145 it's a strong number
+# Method 2 output : 145 is a Strong Number!
+# Method 3 output : 123 it's not a strong number
+
