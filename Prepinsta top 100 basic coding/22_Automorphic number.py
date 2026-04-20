@@ -44,9 +44,9 @@ num = 7
 
 n = num
 square = n * n
-digits = len(str(n))
+length_of_n = len(str(n))
 
-if square % (10 ** digits) == num:
+if square % (10 ** length_of_n) == num:
     print(f"{num} is Automorphic number")
 else:
     print(f"{num} is not Automorphic number")
