@@ -18,18 +18,17 @@ Complexity:
 
 # Method 1: Iterative Approach
 num = 12
-n = num
 
-sum = 1
+total = 1
 
-for i in range(2, n):
-    if (n % i == 0):
-        sum = sum + i
+for i in range(2, num):
+    if (num % i == 0):
+        total += i
 
-if (sum > n):
-    print(n, 'is Abundant Number')
+if (total > num):
+    print(num, 'is Abundant Number')
 else:
-    print(n, 'is not Abundant Number')
+    print(num, 'is not Abundant Number')
 
 
 # Method 2: Using list + sum()
