@@ -18,7 +18,7 @@ Complexity:
     Method 2: Time O(log n) | Space O(1)
 """
 
-# Method 1: Iterative Approach (your logic)
+# Method 1: Iterative Approach
 num1 = 36
 num2 = 60
 
