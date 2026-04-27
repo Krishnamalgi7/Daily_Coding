@@ -34,10 +34,10 @@ else:
 print(f"Decimal to Binary is {binary}")
 
 
-# Method 2: Using built-in bin() (intentional different input)
+# Method 2: Using built-in bin()
 num = 10
 
-binary = bin(num)[2:]   # remove '0b' prefix
+binary = bin(num)[2:]
 
 print(f"Decimal to Binary is {binary}")
 
