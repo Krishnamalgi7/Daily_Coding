@@ -40,15 +40,15 @@ else:
     print("Point lies on X-axis")
 
 
-# Method 2: Using mapping (intentional different input)
+# Method 2: Using mapping
 x = -2
 y = -3
 
 mapping = {
-    (1, 1): "Quadrant I",
-    (-1, 1): "Quadrant II",
-    (-1, -1): "Quadrant III",
-    (1, -1): "Quadrant IV"
+    (1, 1):"Quadrant I",
+    (-1, 1):"Quadrant II",
+    (-1, -1):"Quadrant III",
+    (1, -1):"Quadrant IV"
 }
 
 if x == 0 and y == 0:
@@ -60,7 +60,6 @@ elif y == 0:
 else:
     sign = (1 if x > 0 else -1, 1 if y > 0 else -1)
     print(f"Point lies in {mapping[sign]}")
-
 
 # Method 1 output : Point lies in Quadrant I
 # Method 2 output : Point lies in Quadrant III
