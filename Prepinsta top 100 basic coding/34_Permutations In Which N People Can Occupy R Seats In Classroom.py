@@ -34,6 +34,7 @@ else:
 
 
 # Method 2: Using built-in math.perm()
+
 import math
 
 n = 6
