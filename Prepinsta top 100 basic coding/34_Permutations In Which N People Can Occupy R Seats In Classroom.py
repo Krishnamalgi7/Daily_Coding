@@ -16,7 +16,7 @@ Complexity:
     Method 2: Time O(r) | Space O(1)
 """
 
-# Method 1: Using factorial (manual logic)
+# Method 1: Using factorial
 def factorial(n):
     res = 1
     for i in range(1, n+1):
