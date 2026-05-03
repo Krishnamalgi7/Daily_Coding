@@ -33,7 +33,6 @@ while n > 0:
 
 print(f"Number after replacing 0's with 1 is {res}")
 
-
 # Method 2: Using string replace
 num = 1002
 

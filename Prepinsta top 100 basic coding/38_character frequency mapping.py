@@ -50,7 +50,6 @@ freq = Counter(s1)
 for ch in s2:
     print(ch, 'occurs', freq.get(ch, 0), 'times')
 
-
 # Method 1 output :
 # a occurs 2 times
 # b occurs 2 times
