@@ -27,7 +27,7 @@ while n > 0:
     digit = n % 10
     if digit == 0:
         digit = 1
-    res = res + digit * base
+    res = res + (digit * base)
     base = base * 10
     n = n // 10
 
