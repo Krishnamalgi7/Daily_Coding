@@ -14,7 +14,7 @@ Before diving into complex structures, I am focusing on sharpening my "algorithm
 * **Data Basics:** Deep dives into String manipulation and Array/List operations.
 * **Pythonic Code:** Writing clean, efficient, and readable Python scripts.
 
-### 📂 Phase 2: Data Structures & Algorithms (Upcoming)
+### 📂 Phase 2: Data Structures & Algorithms (Started)
 The next milestone involves transitioning into optimized problem-solving.
 * **Linear & Non-Linear DS:** Implementation of Stacks, Queues, Linked Lists, and Trees.
 * **Algorithm Design:** Exploring Searching, Sorting, and Dynamic Programming.
