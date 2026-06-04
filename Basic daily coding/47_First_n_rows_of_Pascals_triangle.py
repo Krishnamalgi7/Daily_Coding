@@ -1,27 +1,29 @@
 """
 Concept:
-Pascal's Triangle is formed by placing 1 at the beginning and end of each row.
-Every middle element is the sum of the two elements directly above it:
-row[j] = prev_row[j-1] + prev_row[j]
+Pascal's Triangle starts with [1].
+Every new row begins and ends with 1.
+The middle elements are formed by adding adjacent elements from the previous row.
 
 Example:
-n = 5
+Previous Row : [1, 3, 3, 1]
 
+New Row:
 1
-1 1
-1 2 1
-1 3 3 1
-1 4 6 4 1
+1+3 = 4
+3+3 = 6
+3+1 = 4
+1
+
+Result: [1, 4, 6, 4, 1]
 
 Program: Print Pascal's Triangle
 Description:
-    Method 1: Build each row using previous row values.
+    Method 1: Build each row using adjacent elements of the previous row.
     Method 2: Using nCr (Combination Formula).
 Complexity:
     Method 1: Time O(n²) | Space O(n)
     Method 2: Time O(n²) | Space O(1)
 """
-from email.header import BSPACE
 
 # Method 1: Using previous row
 n = 5
@@ -38,8 +40,8 @@ for i in range(n):
 
     new_row = [1]
 
-    for j in range(len(row)-1):
-        new_row.append(row[j] + row[j+1])
+    for j in range(len(row) - 1):
+        new_row.append(row[j] + row[j + 1])
 
     new_row.append(1)
 
@@ -62,16 +64,15 @@ for i in range(n):
 
 
 # Method 1 output :
-#       1
-#      1 1
-#     1 2 1
-#    1 3 3 1
-#   1 4 6 4 1
+#      1
+#     1 1
+#    1 2 1
+#   1 3 3 1
+#  1 4 6 4 1
 
-# Method 2 o/p:
+# Method 2 output :
 # 1
 # 1 1
 # 1 2 1
 # 1 3 3 1
-
 
