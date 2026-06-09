@@ -8,7 +8,7 @@ Example:
 [1, 1, 2, 3, 2, 4]
 → [1, 2, 3, 4]
 
-Program: Remove Duplicates from a List
+Program: Remove Duplicates from a Arrays-List
 Description:
     Method 1: Using loop and membership check.
     Method 2: Using set() while preserving order with dict.fromkeys().

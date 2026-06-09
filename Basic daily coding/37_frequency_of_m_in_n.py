@@ -10,7 +10,7 @@ n = [1,2,2,3], m = [2,3,4]
 → 3 occurs 1 time
 → 4 occurs 0 times
 
-Program: Frequency of Elements from One List in Another
+Program: Frequency of Elements from One Arrays-List in Another
 Description:
     Method 1: Using dictionary to store frequency (your logic).
     Method 2: Using collections.Counter (built-in optimized).
