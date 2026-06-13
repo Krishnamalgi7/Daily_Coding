@@ -38,23 +38,24 @@ print()
 
 
 # Method 2: Using two pointers
-nums = [1,1,2,3,3,4,4,5,5,6,7,8,9,10,11,11]
+nums = [1,1,2,3,3,4,4,5,5,6,7,8,9,10,11,11,11]
 
-if len(nums) == 0:
-    print([])
+n = len(nums)
+
+if n==0:
+    print("Empty List")
 else:
-    j = 0
+    i=0
 
-    for i in range(1, len(nums)):
+    for j in range(1,n):
         if nums[i] != nums[j]:
-            j += 1
-            nums[j] = nums[i]
+            i=i+1
+            nums[i] = nums[j]
 
-    print(nums[:j+1])
-
+    print(*nums[:i+1]) # * This unpacks the list and prints each element separated by a space
 
 # Method 1 output :
 # 1 2 3 4 5 6 7 8 9 10 11
 
 # Method 2 output :
-# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# 1 2 3 4 5 6 7 8 9 10 11
