@@ -21,7 +21,7 @@ Complexity:
     Method 4: Time O(n) | Space O(1)
 """
 
-# Method 1: Using membership testing (single missing number)
+# Method 1: Using membership testing -> Bruteforce solution
 nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 10]
 n = len(nums)
 
@@ -33,7 +33,7 @@ def find_missing(nums):
 print(find_missing(nums))
 
 
-# Method 2: Find first two missing numbers
+# Method 2: Find first two missing numbers -> Bruteforce solution
 nums = [0, 1, 2, 3, 4, 7, 8, 9, 10]
 
 def find_second_missing(nums):
@@ -48,7 +48,7 @@ def find_second_missing(nums):
 print(find_second_missing(nums))
 
 
-# Method 3: Using frequency map
+# Method 3: Using frequency map -> Better solution
 nums = [9, 6, 4, 2, 3, 5, 7, 0, 1]
 
 n = len(nums)
@@ -69,17 +69,17 @@ def find_missing_number(nums):
 print(find_missing_number(nums))
 
 
-# Method 4: Using sum formula
-nums = [9, 6, 4, 2, 3, 5, 7, 0, 1]
+# Method 4: Using sum formula -> Optimal solution
+nums = [9, 6, 4, 2, 3, 5, 7, 0, 1] #37
 
 def find_missing_number_fast(nums):
-    n = len(nums)
+    n = len(nums) #9->1+2+3+4+5+6+7+8+9 = 45
 
-    expected_sum = (n * (n + 1)) // 2
+    len_sum = (n * (n + 1)) // 2
     actual_sum = sum(nums)
 
-    return expected_sum - actual_sum
-
+    return len_sum - actual_sum
+            #  45 - 37 = 8
 print(find_missing_number_fast(nums))
 
 
